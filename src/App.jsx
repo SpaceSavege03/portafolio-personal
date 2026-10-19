@@ -7,12 +7,12 @@ export default function App() {
       <p>Proyecto de Desarrollo Fullstack II.</p>
 
       <a className="btn btn-primary" href="#proyectos">
-        Ver proyectos
+        Ver Mis Proyectos
       </a>
 
       <section id="proyectos" className="mt-5">
         <h2>Proyectos</h2>
-        <p>Aquí presentaré mis trabajos.</p>
+        <p>Aquí presentaré mis trabajossss.</p>
       </section>
     </main>
   )
