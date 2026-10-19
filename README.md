@@ -1,85 +1,86 @@
 # Portafolio compartido
 
-Boceto de un portafolio React para dos estudiantes de Ingeniería en Informática.
-La interfaz permite cambiar de persona y presenta los datos de cada perfil de forma independiente.
+Aplicación web desarrollada con React para presentar dos perfiles de forma independiente. Cada perfil reúne su biografía, tecnologías, proyectos, noticias y medios de contacto.
 
-## Estado actual
+## Funcionalidades
 
-- Diseño oscuro con Bootstrap y componentes organizados con Atomic Design.
-- Selector entre Jocsan Nahuelan y el perfil del compañero, preparado para completar.
-- Presentación, biografía, tecnologías, IA opcional, proyectos, noticias y contacto por persona.
-- Cuatro proyectos de Jocsan: Slowkemania, Ventacars, Zafinas y Dolchesse; imágenes e información adicional pendientes.
-- Noticias breves en dos categorías y enlaces a las páginas principales de las redes.
-- Formulario con validación local; no envía correos ni guarda mensajes.
-- La prueba visual de un solo perfil permanece en una carpeta hermana, fuera de este repositorio.
+- Selector de perfiles.
+- Presentación personal con fotografía y biografía.
+- Tecnologías utilizadas y sección opcional de inteligencia artificial.
+- Tarjetas de proyectos con imágenes, descripciones, tecnologías y enlaces.
+- Filtros de proyectos según sus categorías.
+- Noticias personales y notas de aprendizaje.
+- Enlaces a GitHub, Instagram, Facebook, Gmail, LinkedIn y Spotify.
+- Formulario con validación local.
+- Diseño adaptable a escritorio y dispositivos móviles.
 
-Este repositorio contiene el boceto. El perfil del compañero y las pruebas automatizadas quedan pendientes.
+El formulario valida los datos en el navegador; no envía correos ni almacena mensajes.
 
-## Instalación y ejecución
+## Tecnologías
 
-Se necesita una versión de Node.js compatible con Vite. En este equipo se utilizó Node 22.20.0.
+React, Vite, JavaScript, Bootstrap, CSS y ESLint.
+
+## Instalación
+
+Requisitos: Node.js y npm.
 
 ```powershell
 npm install
+```
+
+## Ejecución
+
+```powershell
 npm run dev
 ```
 
-Abre la dirección que imprima Vite. Normalmente es http://localhost:5173/.
+Abre la dirección indicada en la terminal, normalmente http://localhost:5173/.
 
-Para generar y revisar la compilación:
+## Compilación
 
 ```powershell
 npm run build
 npm run preview
 ```
 
-La compilación se genera en dist y no reemplaza el trabajo de testeo.
+La versión compilada se genera en la carpeta `dist`.
 
-## Datos de cada persona
+## Estructura
 
-| Archivo | Contenido |
-| --- | --- |
-| src/data/jocsan.json | Datos de Jocsan y sus proyectos. |
-| src/data/compañero.json | Datos pendientes del segundo integrante. |
-| src/data/perfiles.js | Importa ambos perfiles y define su orden. |
+```text
+src/
+├── components/
+│   ├── atoms/
+│   ├── molecules/
+│   ├── organisms/
+│   └── templates/
+├── data/
+│   ├── jocsan.json
+│   ├── compañero.json
+│   └── perfiles.js
+├── pages/
+├── App.jsx
+├── main.jsx
+└── styles.css
 
-Se conserva la letra ñ en compañero.json y en su import. Usa los nombres exactos para evitar problemas de rutas.
-Cada integrante completa su JSON sin duplicar la interfaz ni sobrescribir los datos de la otra persona.
+public/
+└── images/
+    ├── jocsan/
+    └── compañero/
+```
 
-Las imágenes de Jocsan se guardan en public/images/jocsan y las del compañero en public/images/compañero.
-Para referenciarlas desde el JSON usa rutas como /images/compañero/foto.jpg, sin incluir public.
-La fotografía actual de Jocsan es un espacio reservado que debe reemplazarse por su foto real.
+Los componentes siguen una organización de Atomic Design: átomos, moléculas, organismos, plantillas y páginas.
 
-## Componentes
+## Personalización
 
-- Átomos: botones, campos, etiquetas, imágenes, enlaces y encabezados.
-- Moléculas: tarjetas, campos de formulario y elementos de navegación.
-- Organismos: secciones y selector de perfiles.
-- Plantilla: distribución de navegación, contenido y pie.
-- Página: selección del perfil y conexión de datos por props.
+Los datos de cada perfil se editan en `src/data/jocsan.json` y `src/data/compañero.json`. El archivo `src/data/perfiles.js` reúne ambos perfiles y define su orden.
 
-El estado del menú, los filtros y el formulario se reinicia al cambiar de persona.
-Si faltan tecnologías, proyectos o noticias, se presentan estados vacíos.
-La sección de IA y su enlace de navegación solo aparecen cuando ese perfil tiene datos de IA.
+Cada JSON contiene nombre, rol, biografía, fotografía, frases, tecnologías, información de IA, proyectos, noticias y redes. Usa `ia: null` para ocultar esa sección en un perfil.
 
-## Trabajo pendiente del compañero
+Guarda las imágenes en la carpeta correspondiente dentro de `public/images`. En el JSON utiliza rutas como `/images/compañero/foto.jpg`, sin incluir `public`.
 
-La configuración y ejecución de Vitest y Chromium, el plan de pruebas, los mocks y el informe de cobertura están asignados al compañero.
-No se instalaron herramientas de testeo ni se añadieron scripts o archivos de pruebas en este boceto.
-
-Consulta [la lista de pendientes](docs/PENDIENTES-PARA-COMPAÑERO.md) para completar su contenido y preparar los casos de prueba.
-Los resultados de la versión de prueba anterior no representan pruebas de esta aplicación compartida.
-
-## Antes de entregar
-
-- Completar los datos reales de ambos perfiles, las imágenes y los enlaces de proyectos.
-- Implementar y ejecutar las pruebas asignadas, con sus resultados y cobertura reales.
-- Revisar móvil, teclado y accesibilidad.
-- Añadir capturas de pantalla y las evidencias de ejecución.
-- Preparar la publicación y la presentación final según la modalidad acordada con el docente.
-
-La pauta compartida originalmente describe trabajo individual. Dos perfiles no cambian por sí solos la modalidad de evaluación.
+Al cambiar de perfil se reinician el menú, los filtros y los campos del formulario. Los apartados sin contenido muestran estados vacíos.
 
 ## Referencia visual
 
-Diseño inspirado en [el portafolio de Tamal Sen](https://tamalsen.dev/), adaptado con contenido propio y una implementación sencilla en React.
+Diseño inspirado en [el portafolio de Tamal Sen](https://tamalsen.dev/), adaptado a una interfaz compartida de dos perfiles.
