@@ -67,12 +67,24 @@
   "proyectos": [
     {
       "id": 1,
-      "titulo": "Slowkemania",
+      "titulo": "Slowkemanía",
       "categoria": "",
       "tipo": "",
-      "descripcion": "",
-      "tecnologias": [],
-      "imagen": "",
+      "descripcion": "Catálogo web de figuras Pokémon para buscar y filtrar productos, consultar sus fichas y coordinar compras por Instagram. El panel de administración permite gestionar figuras, fotos, precios y stock. Puede usar Supabase o los datos locales de products.json.",
+      "tecnologias": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "React Router",
+        "Bootstrap",
+        "React Bootstrap",
+        "CSS",
+        "Lucide React",
+        "Supabase",
+        "Node.js",
+        "npm"
+      ],
+      "imagen": "/images/jocsan/proyectos/slowkemania.png",
       "enlace": "",
       "enlaceTexto": "Ver proyecto",
       "destacado": false
@@ -82,9 +94,13 @@
       "titulo": "Ventacars",
       "categoria": "",
       "tipo": "",
-      "descripcion": "",
-      "tecnologias": [],
-      "imagen": "",
+      "descripcion": "Catálogo web de vehículos que presenta modelos SUV, sedán y deportivos. La interfaz muestra accesos al catálogo, carrito, registro e inicio de sesión y administración.",
+      "tecnologias": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "imagen": "/images/jocsan/proyectos/ventacars.png",
       "enlace": "",
       "enlaceTexto": "Ver proyecto",
       "destacado": false
@@ -94,9 +110,14 @@
       "titulo": "Zafinas",
       "categoria": "",
       "tipo": "",
-      "descripcion": "",
-      "tecnologias": [],
-      "imagen": "",
+      "descripcion": "Aplicación de finanzas personales para registrar ingresos y gastos, organizar categorías y cuentas, y visualizar el movimiento del dinero mediante gráficos. Está pensada primero para teléfonos y usa tonos grises y negros, naranja para crecimientos y rojo para gastos o descensos.",
+      "tecnologias": [
+        "React",
+        "Vite",
+        "Bootstrap",
+        "Bootstrap Icons"
+      ],
+      "imagen": "/images/jocsan/proyectos/zafinas.png",
       "enlace": "",
       "enlaceTexto": "Ver proyecto",
       "destacado": false
@@ -106,9 +127,15 @@
       "titulo": "Dolchesse",
       "categoria": "",
       "tipo": "",
-      "descripcion": "",
-      "tecnologias": [],
-      "imagen": "",
+      "descripcion": "Prototipo frontend de una tienda de pastelería. Permite explorar productos y conservar una selección en el navegador; los pedidos se preparan para copiar y enviar por Instagram. Aún no incluye base de datos, gestión de inventario ni pagos en línea.",
+      "tecnologias": [
+        "Next.js 16.4.0",
+        "React 19.3.0",
+        "TypeScript 7.0.2",
+        "CSS",
+        "localStorage"
+      ],
+      "imagen": "/images/jocsan/proyectos/dolchesse.png",
       "enlace": "",
       "enlaceTexto": "Ver proyecto",
       "destacado": false
