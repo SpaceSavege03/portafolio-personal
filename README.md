@@ -1,5 +1,28 @@
 # React + Vite
 
+## Organización del portafolio con Atomic Design
+
+La estructura está preparada para implementar el portafolio posteriormente.
+Los 20 archivos JSX nuevos están vacíos: no contienen código ni se importan
+todavía desde la aplicación. El código existente se conserva sin cambios.
+
+| Nivel | Carpeta | Componentes previstos |
+| --- | --- | --- |
+| Átomos | `src/components/atoms/` | Button, Input, Label, Image, Link, Heading, TextArea |
+| Moléculas | `src/components/molecules/` | ProjectCard, NewsCard, FormField, NavigationItem |
+| Organismos | `src/components/organisms/` | Navbar, Presentation, AboutMe, ProjectsSection, NewsSection, ContactForm, Footer |
+| Plantillas | `src/components/templates/` | PortfolioTemplate |
+| Páginas | `src/pages/` | PortfolioPage |
+
+Los átomos representan elementos básicos; las moléculas agrupan elementos
+para una función concreta; los organismos componen las secciones del portafolio.
+La plantilla definirá la distribución de esas secciones y la página incorporará
+el contenido final. NewsSection podrá reutilizarse para las dos secciones de
+noticias solicitadas en la evaluación.
+
+Al implementar, se compondrán los niveles progresivamente y se conectará
+PortfolioPage con App.jsx. En esta etapa solo se agrega la organización.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
