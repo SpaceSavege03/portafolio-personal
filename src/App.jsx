@@ -1,19 +1,11 @@
 import React from 'react'
+import perfiles from './data/perfiles.js'
+import ProjectCard from './components/molecules/ProjectCard.jsx'
 
 export default function App() {
   return (
     <main className="container py-5">
-      <h1>Mi portafolio</h1>
-      <p>Proyecto de Desarrollo Fullstack II.</p>
-
-      <a className="btn btn-primary" href="#proyectos">
-        Ver Mis Proyectos
-      </a>
-
-      <section id="proyectos" className="mt-5">
-        <h2>Proyectos</h2>
-        <p>Aquí presentaré mis trabajossss.</p>
-      </section>
+      <ProjectCard proyecto={perfiles[0].proyectos[0]} />
     </main>
   )
 }

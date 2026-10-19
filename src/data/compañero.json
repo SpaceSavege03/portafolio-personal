@@ -1,0 +1,36 @@
+{
+  "id": "compañero",
+  "nombre": "Tu compañero",
+  "rol": "",
+  "biografia": "",
+  "github": "",
+  "redes": [
+    {
+      "nombre": "Instagram",
+      "enlace": "https://www.instagram.com/"
+    },
+    {
+      "nombre": "Facebook",
+      "enlace": "https://www.facebook.com/"
+    },
+    {
+      "nombre": "Gmail",
+      "enlace": "https://mail.google.com/"
+    },
+    {
+      "nombre": "LinkedIn",
+      "enlace": "https://www.linkedin.com/"
+    },
+    {
+      "nombre": "Spotify",
+      "enlace": "https://open.spotify.com/"
+    }
+  ],
+  "foto": "",
+  "fotoAlt": "",
+  "frase": [],
+  "habilidades": [],
+  "ia": null,
+  "proyectos": [],
+  "noticias": []
+}

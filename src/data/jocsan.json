@@ -1,0 +1,133 @@
+{
+  "nombre": "Jocsan Nahuelan",
+  "rol": "Estudiante de Ingeniería en Informática",
+  "biografia": "Aprendo a transformar ideas en experiencias web. Estoy construyendo mi camino en desarrollo y este es un espacio para compartir lo que voy creando.",
+  "github": "https://github.com/SpaceSavege03",
+  "redes": [
+    {
+      "nombre": "Instagram",
+      "enlace": "https://www.instagram.com/"
+    },
+    {
+      "nombre": "Facebook",
+      "enlace": "https://www.facebook.com/"
+    },
+    {
+      "nombre": "Gmail",
+      "enlace": "https://mail.google.com/"
+    },
+    {
+      "nombre": "LinkedIn",
+      "enlace": "https://www.linkedin.com/"
+    },
+    {
+      "nombre": "Spotify",
+      "enlace": "https://open.spotify.com/"
+    }
+  ],
+  "foto": "/images/jocsan/perfil.svg",
+  "id": "jocsan",
+  "fotoAlt": "Espacio reservado para la fotografía de Jocsan Nahuelan",
+  "frase": [
+    "Haciendo tus ideas realidad.",
+    "De forma espectacular."
+  ],
+  "habilidades": [
+    {
+      "numero": "01",
+      "titulo": "Lenguajes y lógica",
+      "texto": "He utilizado Python y Java para explorar soluciones, trabajar la lógica y llevar ideas a pequeños proyectos.",
+      "etiquetas": "PYTHON · JAVA",
+      "simbolo": "{ }"
+    },
+    {
+      "numero": "02",
+      "titulo": "Interfaces web",
+      "texto": "He trabajado con HTML, CSS, JavaScript y React para dar forma a interfaces, mejorando con cada proyecto.",
+      "etiquetas": "HTML · CSS · JAVASCRIPT · REACT",
+      "simbolo": "</>"
+    },
+    {
+      "numero": "03",
+      "titulo": "Datos y entornos",
+      "texto": "He practicado con SQL y Oracle Database, y explorado herramientas de AWS y entornos Linux y Ubuntu.",
+      "etiquetas": "SQL · ORACLE DATABASE · AWS · LINUX / UBUNTU",
+      "simbolo": ">_"
+    }
+  ],
+  "ia": {
+    "descripcion": "Me desenvuelvo con soltura con ChatGPT y Gemini: son mis herramientas más fuertes para explorar soluciones, organizar ideas y apoyar mi trabajo.",
+    "detalle": "También utilizo sus complementos e integraciones, revisando los resultados y adaptándolos a lo que cada proyecto necesita.",
+    "herramientas": [
+      "ChatGPT",
+      "Gemini",
+      "Complementos e integraciones"
+    ]
+  },
+  "proyectos": [
+    {
+      "id": 1,
+      "titulo": "Slowkemania",
+      "categoria": "",
+      "tipo": "",
+      "descripcion": "",
+      "tecnologias": [],
+      "imagen": "",
+      "enlace": "",
+      "enlaceTexto": "Ver proyecto",
+      "destacado": false
+    },
+    {
+      "id": 2,
+      "titulo": "Ventacars",
+      "categoria": "",
+      "tipo": "",
+      "descripcion": "",
+      "tecnologias": [],
+      "imagen": "",
+      "enlace": "",
+      "enlaceTexto": "Ver proyecto",
+      "destacado": false
+    },
+    {
+      "id": 3,
+      "titulo": "Zafinas",
+      "categoria": "",
+      "tipo": "",
+      "descripcion": "",
+      "tecnologias": [],
+      "imagen": "",
+      "enlace": "",
+      "enlaceTexto": "Ver proyecto",
+      "destacado": false
+    },
+    {
+      "id": 4,
+      "titulo": "Dolchesse",
+      "categoria": "",
+      "tipo": "",
+      "descripcion": "",
+      "tecnologias": [],
+      "imagen": "",
+      "enlace": "",
+      "enlaceTexto": "Ver proyecto",
+      "destacado": false
+    }
+  ],
+  "noticias": [
+    {
+      "id": 1,
+      "categoria": "personal",
+      "titulo": "Mi portafolio toma forma",
+      "fecha": "2026-10-18",
+      "contenido": "Un espacio para reunir Slowkemania, Ventacars, Zafinas y Dolchesse."
+    },
+    {
+      "id": 2,
+      "categoria": "aprendizaje",
+      "titulo": "La IA como apoyo al desarrollo",
+      "fecha": "2026-10-18",
+      "contenido": "ChatGPT y Gemini me acompañan al explorar ideas y nuevas formas de trabajar."
+    }
+  ]
+}
