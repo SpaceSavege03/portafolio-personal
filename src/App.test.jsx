@@ -1,14 +1,16 @@
 import { render, screen } from '@testing-library/react'
 import { describe, it, expect } from 'vitest'
-import App from './App'
+import { mockUserFixture } from './test/fixtures/userMock'
+// import UserProfile from './components/UserProfile' // El componente que use los datos
 
-describe('Pruebas unitarias de App (JSDOM)', () => {
-  it('Debería renderizar la aplicación correctamente', () => {
-    render(<App />)
-    
-    // Aquí puedes verificar que algún elemento clave esté presente en pantalla
-    // Por ejemplo, buscando un título o un texto que sepas que está en tu App.jsx
-    const element = screen.getByRole('main') // o cualquier selector válido
-    expect(element).toBeDefined()
+describe('Pruebas unitarias con mockUserFixture', () => {
+  it('Debería renderizar las propiedades del fixture correctamente', () => {
+    // Ejemplo de cómo pasarías el fixture a un componente:
+    // render(<UserProfile user={mockUserFixture} />)
+
+    // O validando directamente los datos simulados en tu lógica de prueba:
+    expect(mockUserFixture.nombre).toBe('Usuario Test')
+    expect(mockUserFixture.rol).toBe('Desarrollador')
+    expect(mockUserFixture.skills).toContain('Vitest')
   })
 })

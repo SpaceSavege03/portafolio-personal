@@ -30,7 +30,7 @@ con campos vacíos y las imágenes reservadas son solamente el boceto.
 - [🚀] Configurar jsdom, Testing Library y limpieza entre pruebas.
 - [🚀] Configurar Vitest Browser Mode, Playwright y Chromium por separado.
 - [🚀] Separar archivos unitarios y browser para no ejecutarlos dos veces.
-- [] Crear fixtures independientes de los datos personales.
+- [🚀] Crear fixtures independientes de los datos personales.
 - [🚀] Documentar un plan con acciones y resultados esperados.
 
 ## Casos que debes implementar
