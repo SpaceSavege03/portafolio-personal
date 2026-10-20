@@ -25,13 +25,13 @@ con campos vacíos y las imágenes reservadas son solamente el boceto.
 
 ## Entorno de pruebas asignado
 
-- [ ] Revisar el código definitivo y acordar qué debe hacer cada interacción.
-- [ ] Instalar versiones compatibles de Vitest y sus paquetes relacionados.
-- [ ] Configurar jsdom, Testing Library y limpieza entre pruebas.
-- [ ] Configurar Vitest Browser Mode, Playwright y Chromium por separado.
-- [ ] Separar archivos unitarios y browser para no ejecutarlos dos veces.
-- [ ] Crear fixtures independientes de los datos personales.
-- [ ] Documentar un plan con acciones y resultados esperados.
+- [🚀] Revisar el código definitivo y acordar qué debe hacer cada interacción.
+- [🚀] Instalar versiones compatibles de Vitest y sus paquetes relacionados.
+- [🚀] Configurar jsdom, Testing Library y limpieza entre pruebas.
+- [🚀] Configurar Vitest Browser Mode, Playwright y Chromium por separado.
+- [🚀] Separar archivos unitarios y browser para no ejecutarlos dos veces.
+- [] Crear fixtures independientes de los datos personales.
+- [🚀] Documentar un plan con acciones y resultados esperados.
 
 ## Casos que debes implementar
 

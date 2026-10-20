@@ -46,14 +46,7 @@
     "simbolo": "</>"
   },
   {
-    "numero": "03",
-    "titulo": "Bases de Datos y Cloud",
-    "texto": "Gestiono información con SQL y Oracle Database, complementando con despliegues en Linux y AWS.",
-    "etiquetas": "SQL · ORACLE DATABASE · AWS · LINUX / UBUNTU",
-    "simbolo": ">_"
-  },
-  {
-  "numero": "04",
+  "numero": "03",
   "titulo": "Desarrollo Móvil",
   "texto": "Desarrollo aplicaciones nativas enfocadas en rendimiento, persistencia de datos y buena experiencia de usuario con Kotlin.",
   "etiquetas": "KOTLIN · ANDROID",
