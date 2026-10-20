@@ -1,9 +1,10 @@
 {
+  
   "id": "compañero",
-  "nombre": "Tu compañero",
-  "rol": "",
-  "biografia": "",
-  "github": "",
+  "nombre": " Joaquín Pérez ",
+  "rol": "Estudiante de Ingeniería en Informática",
+  "biografia": "Llevando la lógica a la práctica, un proyecto a la vez. Este portafolio es el reflejo de mi evolución en el desarrollo de software y de lo que disfruto crear.",
+  "github": "https://github.com/joako-aux",
   "redes": [
     {
       "nombre": "Instagram",
@@ -26,11 +27,89 @@
       "enlace": "https://open.spotify.com/"
     }
   ],
-  "foto": "",
-  "fotoAlt": "",
-  "frase": [],
-  "habilidades": [],
+  "foto": "/images/compañero/perfil.jpeg",
+  "fotoAlt": "Foto de perfil de Joaquín Pérez",
+  "frase": ["Transformando ideas en código eficiente."],
+  "habilidades": [
+  {
+    "numero": "01",
+    "titulo": "Desarrollo y Lógica",
+    "texto": "Construyo soluciones eficientes aplicando lógica de programación y buenas prácticas con Python y Java.",
+    "etiquetas": "PYTHON · JAVA",
+    "simbolo": "{ }"
+  },
+  {
+    "numero": "02",
+    "titulo": "Desarrollo Frontend",
+    "texto": "Diseño y creo interfaces web modernas, interactivas y adaptables con HTML, CSS, JavaScript y React.",
+    "etiquetas": "HTML · CSS · JAVASCRIPT · REACT",
+    "simbolo": "</>"
+  },
+  {
+    "numero": "03",
+    "titulo": "Bases de Datos y Cloud",
+    "texto": "Gestiono información con SQL y Oracle Database, complementando con despliegues en Linux y AWS.",
+    "etiquetas": "SQL · ORACLE DATABASE · AWS · LINUX / UBUNTU",
+    "simbolo": ">_"
+  },
+  {
+  "numero": "04",
+  "titulo": "Desarrollo Móvil",
+  "texto": "Desarrollo aplicaciones nativas enfocadas en rendimiento, persistencia de datos y buena experiencia de usuario con Kotlin.",
+  "etiquetas": "KOTLIN · ANDROID",
+  "simbolo": "📱"
+  }
+  
+  ],
   "ia": null,
-  "proyectos": [],
-  "noticias": []
+  "proyectos": [
+    {
+      "id": 1,
+      "titulo": "TechGaming",
+      "categoria": "",
+      "tipo": "",
+      "descripcion": "Plataforma web de e-commerce y gestión postventa enfocada en la cotización, compra de hardware gaming de alto rendimiento y soporte técnico personalizado.",
+      "tecnologias": [
+        "JavaScript",
+        "HTML",
+        "Bootstrap",
+        "CSS"
+      ],
+      "imagen": "/images/compañero/proyectos/TechGaming.jpg",
+      "enlace": "",
+      "enlaceTexto": "Ver proyecto",
+      "destacado": false
+    },
+    {
+      "id": 2,
+      "titulo": "Tac-tech",
+      "categoria": "",
+      "tipo": "",
+      "descripcion": "Es una solución tecnológica diseñada para resolver los desafíos de trazabilidad y verificación de visitas en terreno para empresas distribuidoras y puntos de venta de productos refrigerados.",
+      "tecnologias": [
+        "Kotlin"
+        
+      ],
+      "imagen": "/images/compañero/proyectos/Tactech.jpg",
+      "enlace": "",
+      "enlaceTexto": "Ver proyecto",
+      "destacado": false
+    }
+  ],
+  "noticias": [
+    {
+      "id": 1,
+      "categoria": "personal",
+      "titulo": "Plataforma web de e-commerce",
+      "fecha": "2026-10-18",
+      "contenido": "Plataforma web de e-commerce y gestión postventa enfocada en la cotización, compra de hardware gaming de alto rendimiento y soporte técnico personalizado"
+    },
+    {
+      "id": 2,
+      "categoria": "aprendizaje",
+      "titulo": "Inicio de proyecto Tac-tech",
+      "fecha": "2026-10-08",
+      "contenido": "Desarrollo aplicaciones nativas KOTLIN · ANDROID "
+    }
+  ]
 }

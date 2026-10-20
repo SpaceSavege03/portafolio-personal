@@ -7,15 +7,15 @@ tests implementados ni afirma que la evaluación esté terminada.
 
 Archivo que debes completar: src/data/compañero.json.
 
-- [ ] Nombre y rol reales.
-- [ ] Biografía propia.
-- [ ] Foto y texto alternativo.
-- [ ] Frases de presentación.
-- [ ] Tecnologías utilizadas, con descripciones prudentes.
-- [ ] Sección de IA opcional o ia: null.
-- [ ] Proyectos con imagen, título, descripción, tecnologías y enlace.
-- [ ] Noticias de las categorías personal y aprendizaje.
-- [ ] GitHub propio y redes; las cinco redes iniciales son páginas generales.
+- [🚀] Nombre y rol reales.
+- [🚀] Biografía propia.
+- [🚀] Foto y texto alternativo.
+- [🚀] Frases de presentación.
+- [🚀] Tecnologías utilizadas, con descripciones prudentes.
+- [🚀] Sección de IA opcional o ia: null.
+- [🚀] Proyectos con imagen, título, descripción, tecnologías y enlace.
+- [🚀] Noticias de las categorías personal y aprendizaje.
+- [🚀] GitHub propio y redes; las cinco redes iniciales son páginas generales.
 
 Guarda tus imágenes en public/images/compañero. No uses jocsan.json como destino
 de tus datos. Las dos personas comparten componentes, no contenido personal.
