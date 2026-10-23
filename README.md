@@ -5,7 +5,7 @@ Aplicación web desarrollada con React para presentar dos perfiles de forma inde
 ## Documentos de la evaluación
 
 - [Informe técnico del proyecto](docs/INFORME-TECNICO-PORTAFOLIO.pdf): describe la interfaz, la estructura de componentes, el flujo de datos, ejemplos de código, las pruebas, la cobertura y los puntos pendientes.
-- [Presentación](docs/PRESENTACION-EVALUACION-FORMATIVA-2-8-DIAPOSITIVAS-FINAL.pptx): ocho diapositivas con capturas, proyectos, Atomic Design, código, pruebas y pendientes.
+- [Presentación](docs/PRESENTACION-EVALUACION-FORMATIVA-2-10-DIAPOSITIVAS-FINAL.pptx): diez diapositivas con capturas, proyectos, Atomic Design, código, pruebas, historial de commits de GitHub y conclusión.
 - [Plan de pruebas](docs/PLAN-DE-PRUEBAS.md): casos aprobados, alcance de cobertura y escenarios pendientes.
 
 ## Funcionalidades

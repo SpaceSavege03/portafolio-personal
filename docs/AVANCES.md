@@ -11,6 +11,7 @@
 - Pruebas unitarias con Vitest/JSDOM y pruebas de interacción en Chromium.
 - Plan de pruebas y pasos de ejecución documentados en `PLAN-DE-PRUEBAS.md` y `README.md`.
 - Workflow preparado para construir y publicar el sitio en GitHub Pages.
+- Presentación de diez diapositivas con capturas, ejemplos de código, pruebas, historial de commits de GitHub y cierre.
 
 ## Verificación realizada
 
