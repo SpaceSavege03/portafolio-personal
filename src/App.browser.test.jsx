@@ -1,9 +1,11 @@
-import { render, screen } from '@testing-library/react'
+import { cleanup, render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import { describe, it, expect } from 'vitest'
+import { afterEach, describe, it, expect } from 'vitest'
 import { mockUserFixture } from './test/fixtures/userMock'
 import { contactMock } from './test/fixtures/contactMock'
 import App from './App'
+
+afterEach(cleanup)
 
 describe('Pruebas unitarias y en Navegador real (Browser Mode)', () => {
   // 1. Tu prueba unitaria del fixture del usuario
@@ -39,5 +41,13 @@ describe('Pruebas unitarias y en Navegador real (Browser Mode)', () => {
       new RegExp(`Gracias, ${contactMock.nombre}\\. Tu mensaje se validó`, 'i')
     )
     expect(mensajeExito).toBeInTheDocument()
+  })
+
+  it('Debería cambiar al perfil del compañero', async () => {
+    render(<App />)
+
+    await userEvent.click(screen.getByRole('button', { name: /Joaquín Pérez/i }))
+
+    expect(screen.getByRole('heading', { level: 1 }).textContent).toContain('Joaquín Pérez')
   })
 })

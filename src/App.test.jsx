@@ -3,6 +3,7 @@ import userEvent from '@testing-library/user-event'
 import { describe, it, expect } from 'vitest'
 import { mockUserFixture } from './test/fixtures/userMock'
 import { contactMock } from './test/fixtures/contactMock'
+import App from './App'
 import ContactForm from './components/organisms/ContactForm'
 
 describe('Pruebas unitarias y de formulario en App.test.jsx', () => {
@@ -39,5 +40,25 @@ describe('Pruebas unitarias y de formulario en App.test.jsx', () => {
       new RegExp(`Gracias, ${contactMock.nombre}\\. Tu mensaje se validó`, 'i')
     )
     expect(mensajeExito).toBeInTheDocument()
+  })
+
+  it('Debería rechazar un correo electrónico inválido', async () => {
+    render(<ContactForm />)
+
+    await userEvent.type(screen.getByPlaceholderText(/¿cómo te llamas?/i), contactMock.nombre)
+    await userEvent.type(screen.getByPlaceholderText(/nombre@ejemplo.cl/i), 'correo-invalido')
+    await userEvent.type(screen.getByPlaceholderText(/cuéntame sobre tu idea/i), contactMock.mensaje)
+    await userEvent.click(screen.getByRole('button', { name: /probar mensaje/i }))
+
+    expect(screen.getByRole('alert')).toHaveTextContent(/correo electrónico válido/i)
+    expect(screen.queryByRole('status')).not.toBeInTheDocument()
+  })
+
+  it('Debería cambiar al perfil del compañero y mostrar sus datos', async () => {
+    render(<App />)
+
+    await userEvent.click(screen.getByRole('button', { name: /Joaquín Pérez/i }))
+
+    expect(screen.getByRole('heading', { level: 1 }).textContent).toContain('Joaquín Pérez')
   })
 })

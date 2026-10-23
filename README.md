@@ -2,6 +2,12 @@
 
 Aplicación web desarrollada con React para presentar dos perfiles de forma independiente. Cada perfil reúne su biografía, tecnologías, proyectos, noticias y medios de contacto.
 
+## Documentos de la evaluación
+
+- [Informe técnico del proyecto](docs/INFORME-TECNICO-PORTAFOLIO.pdf): describe la interfaz, la estructura de componentes, el flujo de datos, ejemplos de código, las pruebas, la cobertura y los puntos pendientes.
+- [Presentación](docs/PRESENTACION-EVALUACION-FORMATIVA-2-8-DIAPOSITIVAS-FINAL.pptx): ocho diapositivas con capturas, proyectos, Atomic Design, código, pruebas y pendientes.
+- [Plan de pruebas](docs/PLAN-DE-PRUEBAS.md): casos aprobados, alcance de cobertura y escenarios pendientes.
+
 ## Funcionalidades
 
 - Selector de perfiles.
@@ -15,6 +21,22 @@ Aplicación web desarrollada con React para presentar dos perfiles de forma inde
 - Diseño adaptable a escritorio y dispositivos móviles.
 
 El formulario valida los datos en el navegador; no envía correos ni almacena mensajes.
+
+## Capturas de pantalla
+
+La página permite alternar entre los dos perfiles. Las capturas siguientes muestran la presentación, la biografía, las tecnologías y la sección de proyectos.
+
+![Inicio del portafolio de Jocsan](docs/evidencias/portafolio-jocsan.png)
+
+![Biografía y tecnologías de Jocsan](docs/evidencias/perfil-jocsan.png)
+
+![Proyectos de Jocsan](docs/evidencias/proyectos-jocsan.png)
+
+![Inicio del portafolio de Joaquín](docs/evidencias/portafolio-joaquin.png)
+
+![Proyectos de Joaquín](docs/evidencias/proyectos-joaquin.png)
+
+La captura de cobertura se encuentra en `docs/evidencias/cobertura.png` y el desglose de los casos, resultados y pendientes está en `docs/PLAN-DE-PRUEBAS.md`.
 
 ## Tecnologías
 
@@ -44,6 +66,32 @@ npm run preview
 ```
 
 La versión compilada se genera en la carpeta `dist`.
+
+## Pruebas
+
+```powershell
+# Pruebas unitarias con JSDOM
+npm run test -- --run
+
+# Instalar Chromium la primera vez
+npx playwright install chromium
+
+# Pruebas de interfaz en Chromium
+npm run test:browser
+
+# Generar el informe de cobertura
+npm run test:coverage
+```
+
+El informe HTML de cobertura queda en `coverage/index.html`.
+
+Para ejecutar las pruebas de navegador, Playwright necesita Chromium instalado. Si el navegador no está instalado en el equipo:
+
+```powershell
+npx playwright install chromium
+```
+
+El resumen técnico, el alcance de la cobertura y los criterios pendientes están en `docs/AVANCES.md` y `docs/PLAN-DE-PRUEBAS.md`.
 
 ## Estructura
 
@@ -84,3 +132,7 @@ Al cambiar de perfil se reinician el menú, los filtros y los campos del formula
 ## Referencia visual
 
 Diseño inspirado en [el portafolio de Tamal Sen](https://tamalsen.dev/), adaptado a una interfaz compartida de dos perfiles.
+
+## Publicación
+
+El repositorio incluye un workflow de GitHub Actions para publicar en GitHub Pages. Para activar la publicación, en **Settings → Pages → Build and deployment** selecciona **GitHub Actions** como origen. Después de subir cambios a `main`, la dirección esperada es `https://spacesavege03.github.io/portafolio-personal/`; hay que confirmar que el workflow finalice correctamente antes de entregar el enlace como publicado.
